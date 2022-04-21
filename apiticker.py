@@ -3,7 +3,7 @@ import requests
 API_HOST = 'https://api.bitkub.com'
 
 url = 'https://notify-api.line.me/api/notify'
-token = 'DJ1A6Zlk2AtvUFAfnw1PSkTnnpeFUc2dyPgDT7o22Jl'#token line notify
+token = ''#token line notify
 headers = {'content-type':'application/x-www-form-urlencoded','Authorization':'Bearer '+token}
 response = requests.get(API_HOST + '/api/market/ticker')
 price = response.json()
